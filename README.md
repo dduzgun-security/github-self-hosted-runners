@@ -143,6 +143,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 [Deniz Onur Duzgun](https://github.com/dduzgun-security)  
+[Maxime Georjon](https://github.com/mxge)  
 [Khalid Nazmus Sakib](https://github.com/knsakibnbc)
 
 <!-- MARKDOWN LINKS & IMAGES -->
