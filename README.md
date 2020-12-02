@@ -31,6 +31,7 @@
       * [Limit access to self-hosted runners](#limit-access-to-self-hosted-runners)
       * [Disable forks](#disable-forks)
       * [Run the self-hosted runner on hardened hosts only](#run-the-self-hosted-runner-on-hardened-hosts-only)
+      * [Do not store secrets in the host runner](#do-not-store-secrets-in-the-host-runner)
    * [Integrity](#integrity)
       * [Use the latest and greatest runner](#use-the-latest-and-greatest-runner)
    * [Availability](#availability)
@@ -66,6 +67,10 @@ https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners
 
 ##### Disable forks
 Disable forks since forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
+
+##### Do not store secrets in the host runner
+When a GitHub Action uses the self-hosted runner, it clones the code in a workdir `_work`.  
+We must ensure that no secrets (application, system, ..) are accessible in this folder.
 
 ##### Run the self-hosted runner on hardened hosts only
 The host of the self-hosted runner must be a hardened OS. 
