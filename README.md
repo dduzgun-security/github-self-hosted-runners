@@ -31,6 +31,7 @@
       * [Using self-hosted runners only in trusted GitHub Actions](#using-self-hosted-runners-only-in-trusted-github-actions)
       * [Limit access to self-hosted runners](#limit-access-to-self-hosted-runners)
       * [Disable forks](#disable-forks)
+      * [Enabling branch protections](#enabling-branch-protections)
       * [Do not store secrets in the host runner](#do-not-store-secrets-in-the-host-runner)
       * [Run the self-hosted runner on hardened hosts only](#run-the-self-hosted-runner-on-hardened-hosts-only)
    * [Integrity](#integrity)
@@ -68,6 +69,9 @@ https://docs.github.com/en/free-pro-team@latest/actions/hosting-your-own-runners
 
 ##### Disable forks
 Disable forks since forks of your public repository can potentially run dangerous code on your self-hosted runner machine by creating a pull request that executes the code in a workflow.
+
+##### Enabling branch protections
+Obviously, we don't want anyone to add changes to a GitHub Action. A great way to have more control over your GitHub Actions is to create branch protection on your repositories. Having a mandatory approver to a PR will reduce the chances of someone trying to force push code changed.
 
 ##### Do not store secrets in the host runner
 When a GitHub Action uses the self-hosted runner, it clones the code in a workdir `_work`.  
@@ -116,6 +120,7 @@ https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/sec
  - [ ] Using self-hosted runners only in trusted GitHub Actions
  - [ ] Limit access to self-hosted runners
  - [ ] Disable forks
+ - [ ] Enabling branch protections
  - [ ] Run the self-hosted runner on hardened hosts only
  - [ ] Use the latest and greatest runner
  - [ ] High Availability
