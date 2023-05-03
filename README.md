@@ -60,8 +60,8 @@ Here is a :fire: list of things to do!
 <!-- CONFIDENTIALITY -->
 ## Confidentiality
 ##### Using self-hosted runners only in trusted GitHub Actions
-Self-hosted runner are using the dedicated host as the runner. 
-Only verified GitHub Actions must use self-hosted runners to reduce the use of a potential malicious open-source GitHub Action that migth access our private network.
+Self-hosted runners are using the dedicated host as the runner. 
+Only verified GitHub Actions must use self-hosted runners to reduce the use of a potential malicious open-source GitHub Action that might access our private network.
 
 ##### Limit access to self-hosted runners
 Restrict the use of self-hosted runners to specific repositories only.  
@@ -109,7 +109,7 @@ Using Hashicorp Vault may be a good solution for this.
 <!-- AUTHORIZATION -->
 ## Authorization
 ##### Only use the technologies you need
-Keep the self-hosted runner simple and authorize only the things you need. For exemple, if you don't need npm don't install it inside the runner.
+Keep the self-hosted runner simple and authorize only the things you need. For example, if you don't need npm don't install it inside the runner.
 
 <!-- AUDIT -->
 ## Audit
