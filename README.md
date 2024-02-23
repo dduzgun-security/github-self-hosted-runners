@@ -90,6 +90,8 @@ https://github.com/actions/runner/releases/latest
 
 ![image](https://user-images.githubusercontent.com/59659739/100800872-2ffc4c80-33f5-11eb-8ed5-95b3a91d863a.png)
 
+> [!TIP]
+> If it works with your GitHub Actions workflows, consider using a [rootless dind action runner](https://github.com/actions-runner-controller/actions-runner-controller/pkgs/container/actions-runner-controller%2Factions-runner-dind-rootless) provided by GitHub as a base self-hosted runner image.
 
 <!-- AVAILABILITY -->
 ## Availability
