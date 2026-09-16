@@ -102,6 +102,12 @@ https://github.com/philips-labs/terraform-aws-github-runner
 ##### Automatically clear and remove workspaces
 Since the self-hosted runner clones the source code in a workspace, we need to ensure that this workspace doesn't get overpopulated and consumes all the available space of the host.
 
+For container-based workloads, [Zoomies](https://github.com/eyupio/zoomies) is an
+open-source runner manager that creates one runner per job by default, removes
+its container afterwards, and uses GitHub App authentication with single-use
+JIT registrations. Its [security documentation](https://github.com/eyupio/zoomies/blob/main/docs/security.md)
+explains the isolation limits; host hardening and access controls are still required.
+
 <!-- AUTHENTICATION -->
 ## Authentication
 ##### Secure the authentication token of the self-hosted runner
